@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myBlog</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./src/style/main.min.css">
+    <link rel="stylesheet" href="./src/style/vendor.min.css">
+    <script defer src="./src/js/vendor/ellipsis.js"></script>
+    <script defer src="./src/js/app.js"></script>
+</head>
+<body>
+   <header class="header" id="header">
+    <div class="header__container container-fluid">
+        <div class="header__inner">
+            <a href="#" class="header__logo logo">
+                <img load="lazy" src="https://cdn-icons-png.flaticon.com/512/21/21601.png" alt="Логотип сайта Blogger" class="logo__icon">
+            </a>
+            <button type="button" class="header__menu-btn menu-btn" id="menu-btn">
+                <i class='bx bx-menu' ></i>
+            </button>
+            <nav class="header__navbar navbar" data-navbar="false">
+                <ul class="navbar__list">
+                    <li class="navbar__item"><a href="index.html" class="navbar__link">Главная</a></li>
+                    <li class="navbar__item"><a href="new.html" class="navbar__link">Новости</a></li>
+                    <li class="navbar__item"><a href="stat.html" class="navbar__link">Статьи</a></li>
+                    <li class="navbar__item"><a href="about.html" class="navbar__link">О сайте</a></li>
+                    <li class="navbar__item"><a href="quest.html" class="navbar__link">Вопрос&ответ</a></li>
+                </ul>
+            </nav>
+            <ul class="header__actions header-actions">
+                <li class="header-actions__item">
+                    <a href="registration.html" class="header-actions__link button button--outline">Регистрация</a>
+                </li>
+                <li class="header-actions__item">
+                    <a href="login.html" class="header-actions__link button button--primary">Войти</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+   </header>
+   <main class="main-content">
+    <div class="main-content__container container">
+        <div class="main-content__grid">
+            
+        </div>
+        <section class="about">                        
+            <h3 class="about__title-m title-lg">О нашем сайте</h3>
+            <img src="https://media.giphy.com/media/l4KibK3JwaVo0CjDO/giphy.gif" alt="" class="about__img">
+            <h4 class="about__title-sm">Сайт созданый котаями, для котов</h4>
+            <div class="about__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ut non perspiciatis cupiditate ducimus consectetur repellendus, molestias itaque ipsa corrupti eos magni saepe voluptatem nisi alias earum aut nesciunt qui quae quibusdam similique. Harum quam sequi eos ipsa facere earum dolor error et provident ducimus!</div>
+            <img src="https://cs8.pikabu.ru/post_img/big/2017/12/09/12/15128516561459473.jpg" alt="" class="about__img">
+            <h4 class="about__title-sm">Самые свежие котовости</h4>
+            <div class="about__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ut non perspiciatis cupiditate ducimus consectetur repellendus, molestias itaque ipsa corrupti eos magni saepe voluptatem nisi alias earum aut nesciunt qui quae quibusdam similique. Harum quam sequi eos ipsa facere earum dolor error et provident ducimus!</div>
+            <img src="https://chudo-prirody.com/uploads/posts/2021-08/thumbs/1628793098_58-p-foto-memnogo-kota-62.jpg" alt="" class="about__img">
+            <h4 class="about__title-sm">Статьи чтоб подумать</h4>
+            <div class="about__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ut non perspiciatis cupiditate ducimus consectetur repellendus, molestias itaque ipsa corrupti eos magni saepe voluptatem nisi alias earum aut nesciunt qui quae quibusdam similique. Harum quam sequi eos ipsa facere earum dolor error et provident ducimus!</div>
+            <h3 class="about__title-m title-lg">Наши спонсоры</h3>
+            <div class="about__block-grid">
+                <section class="block">
+                    <div class="block__content">
+                        <div class="block__detail">
+                            <img src="https://samizoo.ru/upload/iblock/63d/63dd8adbbae5e7cca64087a9496572ab.jpg" alt="" class="block__img">
+                        </div>
+                        <div class="block__detail">
+                            <img src="https://zoomix.su/assets/cache/images/1-250x250-2a6.jpg" alt="" class="block__img">
+                        </div>
+                        <div class="block__detail">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAP8AAADGCAMAAAAqo6adAAAA51BMVEX///8UFBMAAADtJyYRERAODg0LCwkICAb7+/v29vYDAwD5+fnp6enw8PATExHLy8vg4ODT09Pb29vs7OwhISAqKinf39+Ojo6/v791dXWhoaEfHx6UlJQvLy5GRkW1tbWqqqq5ublwcG9aWllqamqCgoE5OTlNTU2goKCLi4pRUVE0NDP97u5iYmLFxcU/Pz7+8vLyISDzIyL0hob709P5vr74HBr3mJf719fyREP0VVT6r674FBL1Z2X85OT4f371mprvMzL1jo77SUjxXVzxb2/6hIP0BwD5trXuTEz6yMj9SUn2MTAZvNRoAAAXf0lEQVR4nOVda0PaSBc205lcINwiyB2CXEQQUNvay9Z22912d/v2//+eNyGQzOVJAtGq6PMJTQhzZs6cOfccHT1lWIWl25lWlP9fvv7w8Y/LRxjQQ6JQaQ014sOVrlx+/HR9/c9tMAGXnz/nH3xsvx/2oNklOap5YDVbvPb20ysPn16b3uf3Xz7evnv/KEP8jbDdUZswLQDVBuLVdzc+/a9+vfVW/+9PV1c3/715nGH+JlitYZVQTQvp74vX/wzov/p+efTm1bX36ebjcxIG7orqEfXR+r/58vftN5/V3wb0X//15ujtq+DjH4875HtEoUkE6v39X/Yv/Ly6ubr6dPPj89Hl1+s11V/fHv38FbDCl8ce9n2hMM6J1Gua3ltfuQ1W/eb2/dG3T9v1/xxMxdXtc9kAbptJ5GtkvL7yd0D/q5svlxf/eZ+vvQ/b/159Nx953PeEk7OcTL5GlutL3zb0v7r59+jN3zfrneDJgn/W/3r3uMO+L5hTopBP28Havr++3tB/e3R08fPt+zXLm989XejTh8+POux7g91VuF8j55uLm2Pv1fUH/iueLvzh9uIRxvo7AJa/SEqbi5evAw7w13/998XFhc8DF89k8Y+O8mD59d7x9vLFu/9defjw0//j89sft7ffv/18SoK/4CwbfbfVcvuDZcVOv1/GQF1+j/0j8+byzbsvP/70ld3Lf29/eerA1c3X1z+fhvlTbkzHi7NJt9bWtHa1NukNx65quSZjCNhfW/J3mBcXvjTM//nraiMMrv768sebi0fmAme6mFc13dAZowGY90e7O3T3ekpVVn00zZiVN1c/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" alt="" class="block__img">
+                        </div>
+                        <div class="block__detail">
+                            <img src="https://samizoo.ru/upload/iblock/63d/63dd8adbbae5e7cca64087a9496572ab.jpg" alt="" class="block__img">
+                        </div>
+                        <div class="block__detail">
+                            <img src="https://planetazoo.tomsk.ru/uploads/Logo-gourmet.jpg" alt="" class="block__img">
+                        </div>
+                        <div class="block__detail">
+                            <img src="https://cdn.mypetstatic.ru/static/static/brands/perfect-fit-logo-8136e-200.jpg" alt="" class="block__img">
+                        </div>
+                        <div class="block__detail">
+                            <img src="https://avatars.mds.yandex.net/get-mpic/1522540/img_id7967334259479598719.jpeg/orig" alt="" class="block__img">
+                        </div>
+                        <div class="block__detail">
+                            <img src="https://planetazoo.tomsk.ru/uploads/Logo-gourmet.jpg" alt="" class="block__img">
+                        </div>
+                    </div>                    
+                </section>
+            </div>            
+            <!-- <img src="https://media.giphy.com/media/MDJ9IbxxvDUQM/giphy.gif" alt="" class="about__img"> -->
+            <h3 class="about__title-m title-lg">Как нас найти</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d192291.4473686917!2d29.0077927!3d41.1442642!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa7040068086b%3A0xe1ccfe98bc01b0d0!2z0KHRgtCw0LzQsdGD0LssINCi0YPRgNGG0LjRjw!5e0!3m2!1sru!2sru!4v1669189578019!5m2!1sru!2sru" width="100%" height="400" object-fit="cover" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+            <section class="footer">
+                <div class="footer__about">
+                    <ul class="footer__about-list">
+                        <li class="footer__about-item"><a href="index.html" class="footer__about-link"></a>Главная</li>
+                        <li class="footer__about-item"><a href="index.html" class="footer__about-link"></a>Новости</li>
+                        <li class="footer__about-item"><a href="about.html" class="footer__about-link"></a>О сайте</li>
+                        <li class="footer__about-item"><a href="#" class="footer__about-link"></a>Вопрос&ответ</li>
+                        <li class="footer__about-item"><a href="#" class="footer__about-link"></a>Контакты</li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+    </div>
+   </main>
+   <div class="theme-block">
+    <label for="input-checkbox" class="theme-block__label">
+        <input type="checkbox" id="input-checkbox" class="theme-block__checkbox">
+        <i class='bx bxs-moon'></i>
+    </label>
+   </div>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+        AOS.init();
+    </script>
+</body>
+</html>

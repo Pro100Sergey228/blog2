@@ -1,0 +1,147 @@
+.profile {
+    width: 100%;
+    // .profile__user
+
+    &__user {
+    padding: 10px;
+    display: flex;
+    background-color: var(--background-block);
+    border-radius: var(--rounded-sm);
+    box-shadow: var(--box-shadow);
+    }
+
+    // .profile__user-photo
+
+    &__user-photo {
+        padding: 10px;
+    }
+
+    // .profile__information
+
+    &__information {
+    padding: 0 20px;
+    }
+
+    // .profile__post
+
+    &__post {
+    }
+
+    &__img{
+        height: 35px;
+        object-fit: cover;
+        width: 100%;
+        border-radius: 50%;
+    }
+
+}
+.photo {
+
+    // .photo__img
+
+    &__img {
+        border-radius: var(--rounded-sm);
+        width: 250px;
+        height: 300px;
+        object-fit: cover;
+    }
+}
+.information {
+}
+.information {
+    padding:20px 40px;
+
+    // .information__user
+
+    &__user {
+        display: flex;
+        margin-bottom: 15px;
+        font-size: 28px;
+        font-weight: var(--font-bold);
+    }
+
+    // .information__status
+
+    &__status {
+        
+        margin-bottom: 10px;
+    }
+
+    // .information__age
+
+    &__age {
+        margin-bottom: 10px;
+    }
+
+    &__hobby{
+        margin-bottom: 75px;
+    }
+
+    // .information__subtitle
+
+    &__subtitle {
+        text-align: left;        
+        line-height: 1.6;
+    }
+}
+.ls{
+    font-size: 16px;
+    font-weight: var(--font-regular);
+}
+
+.profile {
+
+    // .profile__post
+
+    &__post {
+    }
+}
+.post {
+}
+.post-section {
+
+    
+    // .post-section__header
+
+    &__header {
+        width: 100%;
+        padding: 10px 20px;
+        background-color: var(--background-block);
+        border-radius: var(--rounded-sm);
+        margin-bottom: 20px;
+        box-shadow: var(--box-shadow);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    // .post-section__titile
+
+    &__titile {
+    }
+
+    // .post-section__actions
+
+    &__actions {
+         display: flex;
+        align-items: center;
+    }
+
+    // .post-section__action
+
+    &__action {
+        background-color: var(--background-block-secondary);
+        color: var(--bacground-black);
+        font-size: 18px;
+        border: none;
+        line-height: 0;
+        width: 35px;
+        height: 35px;
+        border-radius: var(--rounded-sm);
+        cursor: pointer;
+        &:first-child{
+            margin-right: 10px;
+        }
+    }
+}

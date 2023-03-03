@@ -1,0 +1,83 @@
+.quest {
+    width: 100%;
+    order: 1;
+    // .quest__header
+
+    &__header {
+    }
+
+    // .quest__title
+
+    &__title {
+        text-align: center;
+        margin: 50px 0;
+    }
+}
+
+.chapter {
+    box-shadow: var(--box-shadow);
+    width: 100%;
+    margin-bottom: 13px;
+    background-color: var(--background-block);
+    border-radius: var(--rounded-sm);
+    overflow: hidden;
+    margin: 20px 0;
+    // .chapter__header
+
+    &__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    background-color: var(--background-block-secondary);
+    }
+
+    // .chapter__title
+
+    &__title {
+    }
+
+    // .chapter__list
+
+    &__list {
+    transition: var(--transition-2);
+    display: none;
+    width: 100%;
+    padding: 10px 10px;
+    
+    }
+
+    // .chapter__item
+
+    &__item {
+        width: 100%;
+    }
+
+    // .chapter__link
+
+    &__link {
+        padding: 5px 5px;
+        width: 100%;
+        display: inline-block;
+        transition: var(--transition-2);
+        border-radius: var(--rounded-sm);
+        color: var(--color-text-secondary);
+        transition: 0.4s;
+    }
+}
+.title-md {
+}
+.bar-button {
+    transition: 0.4s;
+    border: none;
+    background-color: var(--background-block);
+    padding: 0 5px;
+    color: var(--background-white);
+    
+}
+.chapter__list.bar--active{
+    display: block;
+    transition: 0.4s;
+}
+.bar-body{
+    transition: 0.4s;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myBlog</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./src/style/main.min.css">
+    <link rel="stylesheet" href="./src/style/vendor.min.css">
+    <script defer src="./src/js/vendor/ellipsis.js"></script>
+    <script defer src="./src/js/app.js"></script>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="header__container container-fluid">
+            <div class="header__inner">
+                <a href="#" class="header__logo logo">
+                    <img load="lazy" src="https://cdn-icons-png.flaticon.com/512/21/21601.png"
+                        alt="Логотип сайта Blogger" class="logo__icon">
+                </a>
+                <button type="button" class="header__menu-btn menu-btn" id="menu-btn">
+                    <i class='bx bx-menu'></i>
+                </button>
+                <nav class="header__navbar navbar" data-navbar="false">
+                    <ul class="navbar__list">
+                        <li class="navbar__item"><a href="index.html" class="navbar__link">Главная</a></li>
+                        <li class="navbar__item"><a href="new.html" class="navbar__link">Новости</a></li>
+                        <li class="navbar__item"><a href="stat.html" class="navbar__link">Статьи</a></li>
+                        <li class="navbar__item"><a href="about.html" class="navbar__link">О сайте</a></li>
+                        <li class="navbar__item"><a href="quest.html" class="navbar__link">Вопрос&ответ</a></li>
+                    </ul>
+                </nav>
+                <ul class="header__actions header-actions">
+                    <li class="header-actions__item">
+                        <a href="registration.html" class="header-actions__link button button--outline">Регистрация</a>
+                    </li>
+                    <li class="header-actions__item">
+                        <a href="login.html" class="header-actions__link button button--primary">Войти</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="main-content">
+        <div class="main-content__container container">
+            <section class="login">
+                <div class="login__body">
+                    <div class="login__title title-lg">Вход</div>
+
+                    <form action="">
+                        <div class="login__pole">
+                            <div class="login__text">Введите Email</div>
+                        </div>
+                        <input type="password" placeholder="" class="login__input">
+                        <div class="login__pole">
+                            <div class="login__text">Введите Пароль</div>
+                        </div>
+                        <input type="email" placeholder="" class="login__input">
+                        <a href="#" class="login__remember">Забыли пароль?</a>
+                        <button ondblclick="document.location='profile.html'" class="login__btn button button--primary">Войти</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+    <div class="theme-block">
+        <label for="input-checkbox" class="theme-block__label">
+            <input type="checkbox" id="input-checkbox" class="theme-block__checkbox">
+            <i class='bx bxs-moon'></i>
+        </label>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

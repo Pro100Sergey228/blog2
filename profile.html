@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myBlog</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./src/style/main.min.css">
+    <link rel="stylesheet" href="./src/style/vendor.min.css">
+    <script defer src="./src/js/vendor/ellipsis.js"></script>
+    <script defer src="./src/js/app.js"></script>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="header__container container-fluid">
+            <div class="header__inner">
+                <a href="#" class="header__logo logo">
+                    <img load="lazy" src="https://cdn-icons-png.flaticon.com/512/21/21601.png"
+                        alt="Логотип сайта Blogger" class="logo__icon">
+                </a>
+                <button type="button" class="header__menu-btn menu-btn" id="menu-btn">
+                    <i class='bx bx-menu'></i>
+                </button>
+                <nav class="header__navbar navbar" data-navbar="false">
+                    <ul class="navbar__list">
+                        <li class="navbar__item"><a href="index.html" class="navbar__link">Главная</a></li>
+                        <li class="navbar__item"><a href="new.html" class="navbar__link">Новости</a></li>
+                        <li class="navbar__item"><a href="stat.html" class="navbar__link">Статьи</a></li>
+                        <li class="navbar__item"><a href="about.html" class="navbar__link">О сайте</a></li>
+                        <li class="navbar__item"><a href="quest.html" class="navbar__link">Вопрос&ответ</a></li>
+                    </ul>
+                </nav>
+                <ul class="header__actions header-actions">
+                    <li class="header-actions__item">
+                        <img src="https://memepedia.ru/wp-content/uploads/2019/12/kot-gruzitsja-9.jpg" alt="" class="profile__img">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="main-content">
+        <div class="main-content__container container">
+            <section class="profile">
+                <div class="profile__user">
+                    <div class="profile__user-photo photo">
+                        <img src="https://memepedia.ru/wp-content/uploads/2019/12/kot-gruzitsja-9.jpg" alt="" class="photo__img">
+                    </div>
+                    <div class="profile__information information">
+                        <h3 class="information__user">Котов Алексей</h3>
+                        <div class="information__status ls">Статус: Мау мау мау мау мау мау 3:</div>
+                        <div class="information__age ls">Возвраст: 19 лет</div>
+                        <div class="information__hobby ls">Хобби: Бегать за своим хвостом</div>
+                        <div class="information__subtitle">Описание: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto numquam cumque incidunt? Rem possimus quam animi doloremque minus soluta ut enim veritatis mollitia quaerat quasi nihil laborum reprehenderit, eos reiciendis.</div>
+                    </div>
+                </div>
+                <div class="profile__post post">
+                    <div class="post-section__header">
+                        <h2 class="post-section__titile title-lg">Мои записи</h2>
+                        <div class="post-section__actions">
+                            <button class="post-section__action" id="article-list"><i class='bx bx-list-ul'></i></button>
+                            <button class="post-section__action" id="article-grid"><i class='bx bxs-grid-alt' ></i></button>
+                        </div>
+                    </div>
+                    <div class="post__grid">                        
+                        <ul class="articles-section__list">
+                            <li class="articles-section__item" data-aos="fade-up" data-aos-duration="2000">
+                                <article class="articles-section__card article-post">
+                                    <img src="https://i.pinimg.com/236x/15/a4/8e/15a48e0bac682fd51afc57a09f13df3e.jpg" alt="Название поста" class="article-post__img">
+                                    <div class="article-post__detail">
+                                        <div class="article-post__info">
+                                            <span class="time">17.11.2022</span><span class="category">Батя</span>
+                                        </div>
+                                        <h3 class="article-post__name title-md">Отец</h3>
+                                        <p class="article-post__description clamp-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis adipisci assumenda aperiam saepe doloremque? Aliquam, culpa! Soluta explicabo unde natus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque fuga tempore officiis sit delectus! Officiis itaque reprehenderit corrupti ipsam doloremque, esse et cupiditate? Impedit fugit dolorum est sit enim! Dignissimos.</p>
+                                        <a href="single-page.html" class="article-post__link button button--primary">Подробнее</a>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="articles-section__item" data-aos="fade-up" data-aos-duration="2000">
+                                <article class="articles-section__card article-post">
+                                    <img src="https://i.pinimg.com/originals/5b/88/9e/5b889e894cf13ac90a953a86fe8afddf.jpg" alt="Название поста" class="article-post__img">
+                                    <div class="article-post__detail">
+                                        <div class="article-post__info">
+                                            <span class="time">17.11.2022</span><span class="category">Батя</span>
+                                        </div>
+                                        <h3 class="article-post__name title-md">Заболел, кашлеет.</h3>
+                                        <p class="article-post__description clamp-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis adipisci assumenda aperiam saepe doloremque? Aliquam, culpa! Soluta explicabo unde natus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque fuga tempore officiis sit delectus! Officiis itaque reprehenderit corrupti ipsam doloremque, esse et cupiditate? Impedit fugit dolorum est sit enim! Dignissimos.</p>
+                                        <a href="single-page.html" class="article-post__link button button--primary">Подробнее</a>
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <div class="theme-block">
+        <label for="input-checkbox" class="theme-block__label">
+            <input type="checkbox" id="input-checkbox" class="theme-block__checkbox">
+            <i class='bx bxs-moon'></i>
+        </label>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
